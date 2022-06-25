@@ -1,0 +1,238 @@
+body {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-size: 16px;
+    line-height: 24px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    background-color: rgb(13, 13, 13);
+    color: #92a2b3;
+}
+
+a,
+i {
+    cursor: pointer !important;
+}
+
+i:hover {
+    color: rgb(168, 47, 47);
+}
+
+a:hover {
+    color: rgb(168, 47, 47) !important;
+}
+
+.parent {
+    width: 90%;
+    margin-top: 40px;
+}
+
+
+
+.parent .search input {
+    display: inline-block;
+    width: 49%;
+    background-color: rgb(13, 13, 13) !important;
+    outline: none;
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid #f9fafb99 !important;
+    text-align: center;
+    color: gray;
+
+}
+
+.cards,
+.contact {
+    width: 90%;
+
+}
+
+.poster {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+.poster,
+.poster img {
+    height: 500px;
+}
+
+.poster-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(210, 219, 228);
+    color: black;
+    transition: 1.3s;
+    opacity: .7;
+}
+
+.poster:hover .poster-content {
+    top: 0;
+}
+
+.contacts {
+    color: rgb(248, 249, 250) !important;
+}
+
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.7s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.7s;
+    display: block;
+
+
+}
+
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 100%;
+    background-color: #f8f6f6 !important;
+    z-index: 999;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: column;
+    transition: .7s;
+
+}
+
+
+
+.contact input {
+    display: inline-block;
+
+    background-color: rgb(13, 13, 13) !important;
+    outline: none;
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid #f9fafb99 !important;
+    text-align: center;
+    color: rgb(163, 139, 139) !important;
+
+}
+
+.contact .validate {
+    background-color: rgb(248, 215, 218);
+
+    padding: 20px;
+    color: #9b8a91 !important;
+    border-radius: 3px;
+
+}
+
+.sidenav {
+    overflow: hidden;
+    transition: .3s;
+}
+
+.link {
+    position: relative;
+    color: white !important;
+    font-size: 16px !important;
+
+
+}
+
+
+.link-top {
+    top: 50%;
+
+
+}
+
+@keyframes mymove {
+    0% {
+        top: 50%;
+    }
+
+    100% {
+        top: 0%;
+    }
+}
+
+.move-link1 {
+    animation: mymove .5s ease-in-out;
+}
+
+.move-link2 {
+    animation: mymove .8s ease-in-out;
+}
+
+.move-link3 {
+    animation: mymove 1.1s ease-in-out;
+}
+
+.move-link4 {
+    animation: mymove 1.4s ease-in-out;
+}
+
+.move-link5 {
+    animation: mymove 1.7s ease-in-out;
+}
+
+.move-link7 {
+    animation: mymove 2s ease-in-out;
+}
+
+.web-site-link {
+    margin-left: 10px !important;
+    color: #9b8a91 !important;
+    font-size: 15px !important;
+    bottom: 10px;
+    padding-left: 10px;
+    background-color: rgb(13, 13, 13) !important;
+
+    z-index: 9999999999;
+
+}
+
+.web-site-link div {
+    bottom: 100px;
+    margin: 10px;
+    color: white !important;
+    font-weight: 100 !important;
+    font-size: 15px !important;
+    display: none;
+    transition: .5s;
+}
+
+.validate {
+    display: none;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Exam</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/animated.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="nav ">
+        <div id="mySidenav" class="sidenav ">
+
+            <a class="link link1 link-top" href="#" onclick="getallMoveByCategory('now_playing')">Now playing</a>
+            <a class="link link2" href="#" onclick="getallMoveByCategory('popular')">Popular</a>
+            <a class="link link3" href="#" onclick="getallMoveByCategory('top_rated')">Top Rated</a>
+            <a class="link link4" href="#" onclick="getallMoveByCategory('trending')">Trending</a>
+            <a class="link link5" href="#" onclick="getallMoveByCategory('upcoming')">Upcoming</a>
+            <a class="link link7 py-4" href="#contacts " style="cursor:pointer ">Contact Us</a>
+            <div class="web-site-link  position-relative" style="height: 500px;">
+                <div class="position-absolute">
+                    <i class=" fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+
+                    <h5>
+                        Contact Us
+
+                        Copyright Â© 2019 All Rights Reserved.
+                    </h5>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div id="main" class="d-flex   text-center">
+            <div class="py-4"><img src="images/logo.png" class="w-50"></div>
+            <div>
+                <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span> -->
+                <i class="fa-solid fa-bars my_bars" style="font-size:30px;cursor:pointer ; color: black;"
+                    onclick="openNav()"></i>
+            </div>
+            <div class="py-4" style="color: black;">
+                <h5> <i class="fa-solid fa-globe" style="cursor:pointer"></i></h5>
+                <h5> <i class="fa-solid fa-share-nodes" style="cursor:pointer"></i></h5>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="p-4 mx-auto parent">
+            <!-- search -->
+            <div class="search d-flex w-100  justify-content-between  py-4">
+                <input type="text" class=" form-control move-input" placeholder="get move by word">
+                <input type="text" class=" form-control search-input" placeholder="search">
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row  cards py-3 mx-auto">
+
+
+            <div class="col-md-4 py-3 ">
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+    <div id="contacts">
+        <div class="container">
+            <div class="contact py-4 mx-auto">
+                <h2 class="py-5">
+                    ContacUs...
+                </h2>
+                <div class="row">
+                    <div class="col-md-6  py-3">
+                        <input type="text" class=" form-control move-input input-name" placeholder="ENTER YOUR NAME">
+                        <div class="py-2 validate name-validate ">Your Name is not valid (2- 30 charecter only) </div>
+                    </div>
+                    <div class="col-md-6  py-3">
+                        <input type="email" class=" form-control move-input input-email" placeholder="ENTER YOUR EMAIL">
+                        <div class="py-2 validate email-validate">entre valid email </div>
+                    </div>
+                    <div class="col-md-6  ">
+                        <input type="number" class=" form-control move-input input-phone"
+                            placeholder="ENTER YOUR PHONR">
+                        <div class="py-2 validate phone-validate">entre valid phone </div>
+                    </div>
+                    <div class="col-md-6  ">
+                        <input type="number" class=" form-control move-input input-age" placeholder="ENTER YOUR AGE">
+                        <div class="py-2 validate age-validate">Your age is not valid (5 to 100) </div>
+                    </div>
+                    <div class="col-md-6  py-3">
+                        <input type="password" class=" form-control move-input input-password"
+                            placeholder="ENTER PASSWORD">
+                        <div class="py-2 validate password-validate">entre valid password *Minimum eight characters, at
+                            least one letter
+                            and one number:* ( number specialCharecter alphaBet number >> EX >> 12@#aA12)
+                        </div>
+                    </div>
+                    <div class="col-md-6  py-3">
+                        <input type="password" class=" form-control move-input input-repassword"
+                            placeholder="RE ENTER PASSWORD">
+                        <div class="py-2 validate repass-validate"> mismatch Password * </div>
+                    </div>
+                </div>
+                <button class="btn border-danger border-2" style="color: rgb(138, 65, 65);">Submit</button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- scripts  -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
