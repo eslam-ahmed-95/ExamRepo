@@ -234,6 +234,7 @@ passwordlVa.addEventListener('keyup', function (e) {
 
 })
 
+
 var phoneVa = document.querySelector('.input-phone');
 
 phoneVa.addEventListener('keyup', function (e) {
